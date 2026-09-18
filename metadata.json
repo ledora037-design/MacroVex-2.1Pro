@@ -1,0 +1,6 @@
+{
+  "name": "MACROVEX 2.1",
+  "description": "Autonomous AI macro trading desk, cross-asset event transmission engine, deterministic risk management, and paper execution terminal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

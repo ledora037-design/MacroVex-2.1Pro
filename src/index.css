@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #07090e;
+    color: #cbd5e1;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+    letter-spacing: -0.01em;
+  }
+
+  /* Monospace numbers for financial precision */
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on;
+  }
+
+  /* Display font for terminal badges & headers */
+  .font-display {
+    font-family: 'Chakra Petch', sans-serif;
+    letter-spacing: 0.03em;
+  }
+}
+
+/* Institutional Terminal Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #090c12;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2333;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #25334a;
+}
+
+/* Institutional Panels & Borders */
+.terminal-panel {
+  background: #0c1017;
+  border: 1px solid #161f2e;
+}
+
+.terminal-panel-sub {
+  background: #080c12;
+  border: 1px solid #131a26;
+}
+
+.terminal-active {
+  background: #0f1624;
+  border-color: #00e5ff33;
+}
+
+/* Subtle glow accents */
+.glow-cyan {
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.15);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.15);
+}
+
+.glow-rose {
+  box-shadow: 0 0 12px rgba(244, 63, 94, 0.15);
+}
+
+/* Smooth ticker scroll */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-ticker {
+  animation: ticker 40s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
